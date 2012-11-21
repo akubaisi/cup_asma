@@ -1,15 +1,17 @@
 Cupcake::Application.routes.draw do
   get "pages/Home"
-
   get "pages/AboutUs"
-
   get "pages/PrivacyPolicy"
-
   get "pages/ContactUs"
 
   resources :customer_cupcakes
-
   resources :customers
+  
+  root :to => "Pages#Home"
+  match 'Home/AboutUs' => 'Home#AboutUs'
+  match 'Home/PrivacyPolicy' => 'Home#PrivacyPlicy'
+  match 'Home/ContactUs' => 'Home#ContactUs'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
