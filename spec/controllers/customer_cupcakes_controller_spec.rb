@@ -24,7 +24,7 @@ describe CustomerCupcakesController do
   # CustomerCupcake. As you add validations to CustomerCupcake, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    { "name" => "MyString" }
+    { :name => "Aliya", :size => "small", :flavor => "Vanilla", :icing => "Vanilla", :additional_topping => "Chocolate", :customer_id => 1}
   end
 
   # This should return the minimal set of values that should be in the session

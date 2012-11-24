@@ -6,12 +6,12 @@ Cupcake::Application.routes.draw do
 
   resources :customer_cupcakes
   resources :customers
+
   
-  root :to => "Pages#Home"
-  match 'Home/AboutUs' => 'Home#AboutUs'
-  match 'Home/PrivacyPolicy' => 'Home#PrivacyPlicy'
-  match 'Home/ContactUs' => 'Home#ContactUs'
-  
+  root :to => 'pages#Home'
+  match 'pages/aboutus' => 'pages#AboutUs'
+  match 'pages/contactus' => 'pages#ContactUs'
+  match 'pages/privacypolicy' => 'pages#PrivacyPolicy'  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

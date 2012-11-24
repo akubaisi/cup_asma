@@ -6,6 +6,7 @@ class CreateCustomerCupcakes < ActiveRecord::Migration
       t.string :flavor
       t.string :icing
       t.string :additional_topping
+      t.integer :customer_id
 
       t.timestamps
     end
